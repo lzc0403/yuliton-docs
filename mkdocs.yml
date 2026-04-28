@@ -1,0 +1,70 @@
+site_name: Yuliton API 文档
+site_description: Yuliton 统一 AI API 平台完整文档
+site_author: Yuliton 技术团队
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Noto Sans SC
+    code: Fira Code
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - zh
+        - en
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - API 文档: yuliton-api.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yuliton
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yuliton
+  generator: false
+
+copyright: Copyright &copy; 2026 Yuliton 技术团队
