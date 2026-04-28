@@ -1,7 +1,7 @@
 {
   "buildCommand": "mkdocs build",
   "outputDirectory": "site",
-  "installCommand": "pip install mkdocs mkdocs-material",
+  "installCommand": "pip install --break-system-packages mkdocs mkdocs-material mkdocs-minify-plugin",
   "framework": null,
   "rewrites": [
     {
