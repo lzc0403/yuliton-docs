@@ -1,5 +1,5 @@
 {
-  "buildCommand": "mkdocs build",
+  "buildCommand": "python -m mkdocs build",
   "outputDirectory": "site",
   "installCommand": "pip install --break-system-packages mkdocs mkdocs-material mkdocs-minify-plugin",
   "framework": null,
